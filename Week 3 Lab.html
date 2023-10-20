@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Week 3 Lab</h1>
+        <h2>{{ lesson.subject }}</h2>
+        <figure>
+        <img v-bind:src = "lesson.Image">
+        </figure>
+        <p>Location: {{ lesson.location }}</p>
+        <p>Price: {{ lesson.price }}</p>
+        
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                lesson: {
+                    subject: 'Math',
+                    location: 'Room 101',
+                    price: '$50',
+                    Image: 'images/math.jpg'
+                }
+            }
+        })
+    </script>
+</body>
+</html>

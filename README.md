@@ -1,2 +1,3 @@
 # learn_git
-Learning git
+# we are in week 4
+
